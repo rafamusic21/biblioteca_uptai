@@ -1,0 +1,132 @@
+@font-face {
+	font-family: Edu QLD Beginner;
+	src: url(../fonts/EduQLDBeginner-Regular.ttf);
+}
+@font-face {
+	font-family: The Nautigal;
+	src: url(../fonts/TheNautigal-Regular.ttf);
+}
+.form-container {
+       position: absolute;
+       top: 40%;
+       left: 48%;
+       transform: translate(-25%, -20%);
+       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+       width: 300px;
+       padding: 40px 30px;
+       border-radius: 10px;
+       box-shadow: 10px 10px 70px #000;
+       font-family: Edu QLD Beginner;
+   }
+
+
+label{
+       font-size: 1.5em;
+       color: #fff;
+   }
+h4{
+    font-size: 2.3em;
+    text-transform: lowercase;
+    font-family: The Nautigal;
+    text-align: center;
+    padding: 5px;
+    color: #fffc39;
+}
+.logoUser{
+	display: flex;
+	width: 150px;
+	height: 150px;
+	margin: -15px auto;
+	padding: 10px;
+	
+}
+
+.logoUser img{
+	width: 100%;
+	height: 100%;
+}
+
+.divDataUser{
+	padding: 10px;
+	margin: auto;	
+}
+.divDataUser span{
+    padding: 5px;
+    margin-left: 25px;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.control input{
+       width: 100%;
+       display: block;
+       padding: 10px;
+       color: black;
+       font-size: 1.5em;
+       border: none;
+       outline: none;
+       margin: 1em 0;
+       font-family: Edu QLD Beginner;
+   }
+.control input[type="submit"]{
+       background: #fffc39;
+       color: #000;
+       font-size: 1.5em;
+       opacity: .75;
+      transition: opacity .3s ease;
+   }
+.control input[type="submit"]:hover{
+        opacity: 1;
+   }
+.link{
+       text-align: center;
+       font-size: 1.5em;
+   }
+.link a{
+       text-decoration: none;
+       color: #fff;
+       opacity: .7;
+       transition: opacity .3s ease;
+   }
+.link a:hover{
+       opacity: 2;
+       color: #fffc39;
+   }
+.alert{
+       color: white;
+       text-align: center;
+       text-transform: uppercase;
+       font-size: 20px;
+    box-shadow: 10px 10px 70px  rgb(209, 209, 209);
+   }
+   .btn_save{
+	font-size: 12pt;
+	background: #fffc39;
+	color: rgb(6, 6, 6);
+	letter-spacing: 1px;
+	border: 0;
+	cursor: pointer;
+	margin: 30px auto 15px auto; 
+	display: block;
+	border-radius: 5px;
+}
+.msg_error{
+    color: rgb(255, 0, 0);
+}
+.msg_save{
+    color: rgb(77, 255, 0);
+}
+
+   /*****************************************************ESTYLOS RESPONSIVE****************************/
+   @media screen and (min-width:599px){
+    .form-container{
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        width: 450px;
+    }
+
+   
+}

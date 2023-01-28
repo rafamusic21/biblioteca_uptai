@@ -1,0 +1,242 @@
+@font-face {
+	font-family: Edu QLD Beginner;
+	src: url(../fonts/EduQLDBeginner-Regular.ttf);
+}
+@font-face {
+	font-family: Splash;
+	src: url(../fonts/Splash-Regular.ttf);
+}
+@font-face {
+	font-family: The Nautigal;
+	src: url(../fonts/TheNautigal-Regular.ttf);
+}
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+a{
+	text-decoration: none;
+	font-family: 'Edu QLD Beginner', cursive;
+	letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Edu QLD Beginner', cursive;
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: #fff;;
+}
+h1{
+	font-size: 26px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+span {
+    font-family: 'Edu QLD Beginner', cursive;
+    letter-spacing: 1px;
+    font-size: 16pt;
+    line-height: 20px;
+	color: #fff;
+}
+label {
+    font-family: 'Edu QLD Beginner', cursive;
+    letter-spacing: 1px;
+    font-size: 16pt;
+    line-height: 20px;
+	color: black;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.container--flex{
+    display: flex;
+}
+.column{
+    width: 100%;
+}
+/*****************************************************HEADER****************************************/
+.header{
+    width: 100%;
+	background-color: rgba(0,0,0,0.6);
+	height: 80px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px;
+}
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.logo img{
+	height: 55px;
+	margin-right: 10px;
+}
+.letra{
+    font: 0/0 a;
+    text-shadow: transparent;
+    color: transparent;
+    text-decoration: none;
+    }
+.optionsBar{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optionsBar span {
+    font-size: 15pt;
+	color: #fff;
+    padding-right: 15px;
+}
+.optionsBar a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: 20px;
+}
+.optionsBar p{
+	font-family: 'Edu QLD Beginner', cursive;
+	font-size: 15pt;
+	color: #fff;
+}
+/************************************************REPORTES*************************************/
+.reportes_a ,.reportes_b{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 80%;
+	margin: auto;
+}
+.reportes_a a{
+	color: #fffc39;
+	width: calc(100% / 5);
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	font-size: 25pt;
+	text-align: center;
+}
+.reportes_b a{
+	color: #fffc39;
+	width: calc(100% / 5);
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	font-size: 25pt;
+	text-align: center;
+}
+
+
+.reportes_a p, .reportes_b p{
+	color: #fff;
+}
+
+.reportes_a span, .reportes_b span{
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+/**************************************************STYLOS RESPOSIVE***********************************/
+@media screen and (min-width:480px){
+    .letra{
+        font: 0/0 a;
+        text-shadow: transparent;
+        color: transparent;
+        text-decoration: none;
+        }
+    .optionsBar span {
+        font-size: 18pt;;
+    }
+    .optionsBar p{
+        font-size: 18pt;
+    }
+}
+@media screen and (min-width:613px){
+    .optionsBar span {
+        font-size: 18pt;
+        margin-right: 10px;
+    }
+    .optionsBar p{
+        font-size: 18pt;
+        margin-right: 10px;
+    }
+}
+@media screen and (min-width:768px){
+    .header{
+        height: 60px;
+    }
+    .logo img{
+        height: 50px;
+        margin-right: 10px;
+    }
+    .letra{
+        position: absolute;
+        font-family: 'Splash', cursive;
+        color: #fffc39;
+        font-size: 1.2em;
+        margin-left: 90px;
+    }
+    .optionsBar span {
+        font-size: 14pt;
+        margin-right: -8px;
+    }
+    .optionsBar p{
+        font-size: 14pt;
+        margin-right: 8px;
+    }
+}
+@media screen and (min-width:850px){
+    .letra{
+        font-size: 1.5em;
+        margin-left: 98px;
+    }
+}
+@media screen and (min-width:1020px){
+    .letra{
+        font-size: 2em;
+        margin-left: 98px;
+    }
+    .optionsBar span {
+        font-size: 16pt;
+        margin-right: -5px;
+    }
+    .optionsBar p{
+        font-size: 16pt;
+        margin-right: 15px;
+    }
+}

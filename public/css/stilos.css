@@ -1,0 +1,662 @@
+@font-face {
+	font-family: Edu QLD Beginner;
+	src: url(../fonts/EduQLDBeginner-Regular.ttf);
+}
+@font-face {
+	font-family: Splash;
+	src: url(../fonts/Splash-Regular.ttf);
+}
+@font-face {
+	font-family: The Nautigal;
+	src: url(../fonts/TheNautigal-Regular.ttf);
+}
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url('../img/header.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	position: relative;
+}
+body:before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		top: 0;
+		z-index: -1000;
+        transform: translateY(5.6%);
+		object-fit: cover;
+	}
+
+a{
+	text-decoration: none;
+	font-family: 'Edu QLD Beginner', cursive;
+	letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Edu QLD Beginner', cursive;
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: #fff;;
+}
+h1{
+	font-size: 26px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+span {
+    font-family: 'Edu QLD Beginner', cursive;
+    letter-spacing: 1px;
+    font-size: 16pt;
+    line-height: 20px;
+	color: #fff;
+}
+header{
+	position: fixed;
+	width: 100%;
+}
+.header{
+	
+	background-color: rgba(0,0,0,0.6);
+	height: 60px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	
+}
+
+.logo img{
+	height: 50px;
+	margin-right: 10px;
+}
+h2.letra{
+	font-family: 'Splash', cursive;
+	color: #fffc39;
+	font-size: 2em;
+}
+
+.btn_genos{
+	display: inline-block;
+	margin: 25px 0px;
+	background-color:#B8C045;
+	color: #fff;
+	padding: 45px 45px;
+	text-decoration: none;
+	font-size: 18px;
+	border-radius: 70%;
+}
+
+.btn_genos:hover{
+	background-color: rgb(198, 202, 125);
+}
+.optionsBar{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optionsBar span {
+   
+    font-size: 15pt;
+	color: #fffc39;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+.photouser {
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+.close{
+	width: 25px;
+    height: 25px;
+}
+.optionsBar a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: 30px;
+}
+.optionsBar p{
+	font-family: 'Edu QLD Beginner', cursive;
+	font-size: 15pt;
+	color: #fffc39;
+
+}
+.optionsBar span.user{
+	transform: translateX(-50%);
+}
+/***********footer********/
+
+footer{
+	width: 100%;
+    height: 100%;
+	margin-top: 200px;
+    background:   #252627;
+    display: flex;
+	justify-content:space-between;
+	align-items: center;
+    transform: translateY(51%);
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 75px;
+}
+
+
+footer div div h2.brand{
+	font-family: 'The Nautigal', cursive;
+	color: #fafaf7;
+	font-size: 2.5em;
+     transform: translateX(5%);
+     margin-top: 20px;
+}
+
+footer div div p{
+	font-family: 'Edu QLD Beginner', cursive;
+	color: #fafaf7;
+	font-size: 22px;
+    transform: translateX(5%);
+	
+}
+/************************menu********************************************/
+nav{
+	width: auto;
+	height: 40px;
+	background-color: rgba(0,0,0,0.6);
+	display: flex;
+	
+	align-items: center;
+}	
+nav ul{
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+nav ul li a{
+	text-align: none;
+	font-size: 17px;
+	color: #fff;
+	padding: 15px 20px;
+	display: block;
+}
+
+nav ul li a:hover {
+	background-color: rgba(0,0,0,10);
+	color: #fffc39;
+	font-size: 20px;
+}
+
+nav ul li ul{
+	display: flex;
+	top: 74px;
+	flex-direction: column;
+	display: none;
+}
+
+nav ul li ul{
+	position: absolute;
+	background-color: rgba(0,0,0,0.6);
+}
+
+nav ul li ul li{
+	width: 100%;
+	position: relative;
+	border-radius: 0 0 10px 10px;
+}
+nav ul li:hover > ul{
+	margin-top: 25px;
+	display: block;
+	border-radius: 0 0 10px 10px;
+
+}
+
+#container{
+	
+	padding: 90px 15px 15px;
+}
+/***************************registros**************/
+.form_register{
+	width: 450px;
+	margin: auto;
+	margin-top: 30px;
+}
+.form_register h1{
+	color: #fff;
+}
+hr{
+	border: 0;
+	background: #fffc39;
+	height: 1px;
+	margin: 10px 0;
+	display: block;
+}
+
+form{
+	background-color: rgba(0,0,0,0.6);
+	margin: auto;
+	padding: 20px 50px;
+	border: 1px solid #fffc39;
+}
+label{
+	color: #fff;
+	display: block;
+	font-size: 18pt;
+	font-family: 'Edu QLD Beginner', cursive;
+	margin: 15px auto 5px auto;
+}
+input,select{
+	background: rgba(0, 0, 0, 0.4);
+	display: block;
+	width: 100%;
+	font-size: 12pt;
+	padding: 5px;
+	border-radius: 1px;
+	border: 1px solid #fffc39;
+	color: #fff;
+}
+ #rol option{
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	
+}
+
+.notItemOne option:first-child{
+	display: none;
+} 	
+.btn_agg, .btn_cancel_agg{
+	width: 125px;
+	background: #ff0000;
+	align-items: center;
+	color: #fff;
+	display: inline-block;
+	padding:  5px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: block;
+	margin: 15px;
+}
+.btn_cancel_agg{
+background: #42b343;
+}
+
+.btn_save{
+	font-size: 12pt;
+	background: #fffc39;
+	color: rgb(6, 6, 6);
+	letter-spacing: 1px;
+	border: 0;
+	cursor: pointer;
+	margin: 30px auto 15px auto; 
+	display: block;
+	border-radius: 5px;
+	
+}
+
+.alert{
+	width: 100%;
+	background: #66e07d66;
+	border-radius: 6px;
+	margin: 20px auto;
+}
+
+.msg_error{
+	color: #0a0a0a;
+	
+}
+
+.msg_save{
+	color: #E3BA32;
+}
+
+.alert p{
+	padding: 10px;
+}
+/***********chat bot**************/
+
+
+/*********************lista de usuarios*************************/
+
+#container h1{
+   
+	font-size: 35px;
+	display: inline-block;
+	margin-top: 20px;
+
+}
+
+.btn_new{
+	display: inline-block;
+	background: #fffc39;
+	color: black;
+	padding: 5px 25px;
+	border-radius: 4px;
+	margin: 20px;
+}
+
+table{
+    margin-top: 15px;
+	border-collapse: collapse;
+	font-size: 12pt;
+	font-family: 'arial';
+	width: 100%;
+
+}
+table th{
+	text-align: left;
+	padding: 10px;
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	
+}
+table tr:nth-child(odd){
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	border: 2px;
+}
+
+table td{
+	padding: 10px;
+	color: #fff;
+}
+.agg_pro{
+	color: #05DA17
+}
+.link_edit{
+	color: #40ce0c;
+}
+.link_delete{
+	color: #ff0000;
+}
+.link_add{
+	color: #8eff3e;
+}
+.data_agg{
+	text-align: center;
+	margin-top:20px; 
+}
+.data_agg span{
+	font-weight: bold;
+	
+	font-size: 12pt;
+}
+
+
+.data_delete{
+	text-align: center;
+	margin-top:40px; 
+	color: #fff;
+	font-size: 18pt;
+}
+.data_delete h2{
+	font-size: 18pt;
+
+}
+.data_delete span{
+	font-weight: bold;
+	color: #fffc39;
+	font-size: 18pt;
+}
+.btn_cancel, .btn_ok{
+	width: 125px;
+	background: #ff0000;
+	border: none;
+	color: #fff;
+	display: inline-block;
+	padding:  5px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+}
+.btn_cancel{
+	background: #42b343;
+	align-content: center;
+}
+.data_delete form{
+	background: initial;
+	margin: auto;
+	padding: 20px 50px;
+	border: 0;
+}
+/***********paginador***********/
+
+.paginador ul{
+	padding: 15px;
+	list-style: none;
+	background: rgba(0,0,0,0.6);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.paginador a, .pageSelected{
+	color: #fffc39;
+	border: 1px solid #ddd;
+	padding: 5px;
+	/**margin-top: 10px;*/
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	width: 35px;
+}
+.paginador a:hover{
+	background: #ddd;
+}
+.pageSelected{
+	color: #fff;
+	color: #fffc39;
+	border: 1px solid #428bca;
+}
+
+/**********BUSCADOR*******/
+
+ .form_search{
+    margin-top: 25px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	float: right;
+	background: initial;
+	padding: 10px;
+	border-radius: 10px;	
+}
+
+.form_search .btn_search{
+	background: #fffc39;
+	color: black;
+	padding: 0 20px;
+	border: 0;
+	cursor: pointer;
+	margin-left: 10px; 
+	
+}
+
+.form_search button{
+	border-radius: 5px;
+}
+
+
+/*********reportes**********/
+.reportes_a ,.reportes_b{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 80%;
+	margin: auto;
+}
+.reportes_a a{
+	color: #fffc39;
+	width: calc(100% / 5);
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	font-size: 25pt;
+	text-align: center;
+}
+.reportes_b a{
+	color: #fffc39;
+	width: calc(100% / 5);
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	font-size: 25pt;
+	text-align: center;
+}
+
+
+.reportes_a p, .reportes_b p{
+	color: #fff;
+}
+
+.reportes_a span, .reportes_b span{
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+
+/**************panel del control**************/
+.divContainer{
+	margin-bottom: 20px;
+}
+
+.titelPanelControl{
+	width: 100%;
+	background-color: rgba(0,0,0,0.6);
+	padding: 5px 15px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 20pt !important;
+	color: #f4f6fb;
+}
+.dashboard{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin: auto;
+}
+.dashboard a{
+	color: #808B96;
+	width: calc(100% / 5);
+	padding: 20px;
+	background-color: #fff;
+	font-size: 25pt;
+	text-align: center;
+}
+
+.dashboard p{
+	color: #3279a7;
+}
+
+.dashboard span{
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+.containerPerfin{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.containerDataUser, .grafico{
+	width: 500px;
+	background-color: rgba(0,0,0,0.6);
+
+	padding: 20px;
+}
+.logoUser{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 20px auto;
+	padding: 25px;
+	
+}
+
+.logoUser img{
+	width: 100%;
+	height: 100%;
+}
+
+.divDataUser{
+	padding: 20px;
+	margin: auto;	
+}
+
+.divInfoSistema h4{
+	background:   #272527;
+	padding: 5px 10px;
+	color: #fffc39;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.divDataUser > div{
+	display: flex;
+
+}
+.divDataUser label{
+	width: 150px;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.divDataUser span{
+	padding: 5px;
+}
+
+.divInfoSistema form{
+	padding: 20px;
+}
+.divInfoSistema input{
+	margin-bottom: 10px;
+}
+.divInfoSistema button{
+	width: 50%;
+	height: 35px;
+}
+
+
+
